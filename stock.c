@@ -4,355 +4,385 @@
 void max(double arr[7])
 {
     double max;
-    for(int i=0;i<7;i++)
+    int x;
+    for (int i = 0; i < 7; i++)
     {
-        if (max<arr[i])
-        max=arr[i];
+        if (max < arr[i])
+        {
+            max = arr[i];
+            x = i;
+        }
     }
     printf("\n");
-    printf("    The max rise was:  +");
+    printf("\n");
+    printf("::::::::::::::::::::::::::::::::::::::\n");
+    printf("    Highest Rise Was On Day: %d", x);
+    printf("\n");
+    printf("    The max rise was:       +");
     printf("%lf\n", max);
+    printf(":::::::::::::::::::::::::::::::::::::::\n");
 }
 
 void min(double arr[7])
 {
     double min;
-    for(int i=0;i<7;i++)
+    int x;
+    for (int i = 0; i < 7; i++)
     {
-        if (min>arr[i])
-        min=arr[i];
+        if (min > arr[i])
+        {
+            min = arr[i];
+            x = i;
+        }
     }
-    printf("    The max dip was:   -");
+    printf("\n");
+    printf("\n");
+    printf("::::::::::::::::::::::::::::::::::::::\n");
+    printf("    Highest Dip Was On Day: %d", x);
+    printf("\n");
+    printf("    The max dip was:       ");
     printf("%lf\n", min);
+    printf("::::::::::::::::::::::::::::::::::::::\n");
+
+    printf("\n");
+    printf("\n");
+    printf("\t\t\t:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:\n");
+
+    printf("\t\t\t*\t                                          \t\t*\n");
+    printf("\t\t\t*\t          Thank You For Visiting!  \t\t\t*\n");
+    printf("\t\t\t*\t                                          \t\t*\n");
+    printf("\t\t\t:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:\n");
 }
 
-
-void Stock_Market(){
-        system("cls");
-     printf("\t\t\t-----------------------------------------------------------------\n");
+void Stock_Market()
+{
+    system("cls");
+    printf("\t\t\t-----------------------------------------------------------------\n");
 
     printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t       Welcome To Our Stock Analysis  \t\t\t|\n");
+    printf("\t\t\t|\t       Welcome To Our Stock Analysis  \t\t\t|\n");
     printf("\t\t\t|\t                                          \t\t|\n");
     printf("\t\t\t-----------------------------------------------------------------\n");
     printf("\n");
-     printf("-----------------------------------------------------------------\n");
-            printf(" Serial No  ");
-            
-            printf(" Company Name ");
-            
-            printf(" Stock Price \n");
-            
-             printf("  \n");
-            printf("-----------------------------------------------------------------\n");
-            printf("    1");
-            printf("           HDFC        ");
-            printf("   0\n");
-            
-            printf("    2");
-            printf("           IBM      ");
-            printf("      0\n");
-            
-            printf("    3");
-            printf("           GFG        ");
-            printf("    0\n");
-            
-            printf("    4");
-            printf("           LIC       ");
-            printf("     0\n");
-            
-            printf("    5");
-            printf("           IDK       ");
-            printf("     0\n");
-            
-            
-            
-            
-            printf("-----------------------------------------------------------------\n");
-            int choice;
-            
-            printf("Enter The choice Of your Company No: ");
-            scanf("%d",&choice);
-    
-            printf("-----------------------------------------------------------------\n");
-            printf("-----------------------------------------------------------------\n");
-
-            
-            
-            switch(choice)
-            {
-              case 1:
-              system("cls");
-             
-              printf("\t\t\t-----------------------------------------------------------------\n");
-
-    printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t       Welcome To HDFC  \t\t\t\t|\n");
-    printf("\t\t\t|\t                                          \t\t|\n");
-    printf("\t\t\t-----------------------------------------------------------------\n");
-
-     printf("\t\t\t-----------------------------------------------------------------\n");
-
-    printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t       DAILY STOCK PRICE  \t\t\t\t|\n");
-    printf("\t\t\t|\t                                          \t\t|\n");
-    printf("\t\t\t-----------------------------------------------------------------\n");
-
-
-            double price1[7] = {24,4,9,0 ,1,2,3};
-
-              
-
-     printf("\n");
-     printf("\n");
-     printf("\n");
-
-            printf(" Day No    ||    ");
-            printf(" Stock Price \n");
-            
-            
-            printf("**************************************\n");  
-          
-
-
-            for(int i=0;i<7;i++)
-            {
-                int j=i+1;
-                printf("  %d                 " , j );
-                printf("  %d  \n" , price1[i] );
-
-                printf("**************************************\n");
-
-            }
-            printf(" Highest Rise Was On Day: %d\n",1);
-            max(price1);
-            min(price1);
-
-              break;
-
-              case 2:
-              system("cls");
-
- printf("\t\t\t-----------------------------------------------------------------\n");
-
-    printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t         Welcome To IBM  \t\t\t\t|\n");
-    printf("\t\t\t|\t                                          \t\t|\n");
-    printf("\t\t\t-----------------------------------------------------------------\n");
+    printf("-----------------------------------------------------------------\n");
+    printf("\n");
+    printf(" Serial No  ");
 
-     printf("\t\t\t-----------------------------------------------------------------\n");
+    printf(" Company Name ");
 
-    printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t       DAILY STOCK PRICE  \t\t\t\t|\n");
-    printf("\t\t\t|\t                                          \t\t|\n");
-    printf("\t\t\t-----------------------------------------------------------------\n");
+    printf(" Stock Price \n");
 
-              double price2[7] = {2467.15,260,310, 40, 535, 695,2};
+    printf("  \n");
+    printf("-----------------------------------------------------------------\n");
+    printf("    1");
+    printf("           HDFC        ");
+    printf("   17,094.95\n");
 
-              printf("\n");
-              printf("\n");
-              printf("\n");
+    printf("    2");
+    printf("           IBM      ");
+    printf("      16,291.75\n");
 
-            printf(" Day No    ||    ");
-            printf(" Stock Price \n");
-            
-            
-            printf("**************************************\n");  
-              
+    printf("    3");
+    printf("           GFG        ");
+    printf("    21,091.15\n");
 
-            for(int i=0;i<7;i++)
-            {
-                int j=i+1;
-                printf("  %d                 " , j );
-                printf("  %d  \n" , price2[i] );
+    printf("    4");
+    printf("           LIC       ");
+    printf("     1,091.15\n");
 
-                printf("**************************************\n");
+    printf("    5");
+    printf("           IDK       ");
+    printf("     5,091.15\n");
 
-            }
-            
-            printf(" Highest Rise Was On Day: %d",2);
-            max(price2);
-            min(price2);
+    printf("-----------------------------------------------------------------\n");
+    int choice;
 
-              break;
+    printf("Enter The choice Of your Company No: ");
+    scanf("%d", &choice);
 
+    printf("-----------------------------------------------------------------\n");
+    printf("-----------------------------------------------------------------\n");
 
+    switch (choice)
+    {
+    case 1:
+        system("cls");
 
-              case 3:
-              system("cls");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
- printf("\t\t\t-----------------------------------------------------------------\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t|\t       Welcome To HDFC  \t\t\t\t|\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
-    printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t       Welcome To GFG  \t\t\t\t\t|\n");
-    printf("\t\t\t|\t                                          \t\t|\n");
-    printf("\t\t\t-----------------------------------------------------------------\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
-     printf("\t\t\t-----------------------------------------------------------------\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t|\t       WEEKLY FLUCTUATIONS \t\t\t\t|\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
-    printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t       DAILY STOCK PRICE  \t\t\t\t|\n");
-    printf("\t\t\t|\t                                          \t\t|\n");
-    printf("\t\t\t-----------------------------------------------------------------\n");
+        double price1[7] = {24.7, -40.8, 9.78, 0.57, -11.6, 20.5, 37.45};
 
-              double price3[7] = {2467.15,260,310, 40, 535, 695,2};
+        printf("\n");
+        printf("\n");
+        printf("\n");
 
+        printf(" Day No    ||    ");
+        printf(" Stock Price \n");
 
+        printf("**************************************\n");
 
-              printf("\n");
-              printf("\n");
-              printf("\n");
+        for (int i = 0; i < 7; i++)
+        {
+            int j = i + 1;
+            printf("  %d                 ", j);
+            printf("  %lf  \n", price1[i]);
 
-            printf(" Day No    ||    ");
-            printf(" Stock Price \n");
-            
-            
-            printf("**************************************\n");  
+            printf("**************************************\n");
+        }
+        max(price1);
+        min(price1);
 
-            for(int i=0;i<7;i++)
-            {
-                int j=i+1;
-                printf("  %d                 " , j );
-                printf("  %d  \n" , price3[i] );
+        break;
 
-                printf("**************************************\n");
+    case 2:
+        system("cls");
 
-            }
-            
-            printf(" Highest Rise Was On Day: %d",1);
-            max(price3);
-            min(price3);
-              break;
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
-              case 4:
-              system("cls");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t|\t         Welcome To IBM  \t\t\t\t|\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
- printf("\t\t\t-----------------------------------------------------------------\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
-    printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t       Welcome To LIC  \t\t\t\t\t|\n");
-    printf("\t\t\t|\t                                          \t\t|\n");
-    printf("\t\t\t-----------------------------------------------------------------\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t|\t       WEEKLY FLUCTUATIONS  \t\t\t\t|\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
-     printf("\t\t\t-----------------------------------------------------------------\n");
+        double price2[7] = {67.15, 2.60, 39.2, 76.9, -53.5, -69.5, 2.27};
 
-    printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t       DAILY STOCK PRICE  \t\t\t\t|\n");
-    printf("\t\t\t|\t                                          \t\t|\n");
-    printf("\t\t\t-----------------------------------------------------------------\n");
+        printf("\n");
+        printf("\n");
+        printf("\n");
 
-             double price4[7] = {2467.15,260,310, 40, 535, 695,2};
+        printf(" Day No    ||    ");
+        printf(" Stock Price \n");
 
-              
+        printf("**************************************\n");
 
-              printf("\n");
-              printf("\n");
-              printf("\n");
+        for (int i = 0; i < 7; i++)
+        {
+            int j = i + 1;
+            printf("  %d                 ", j);
+            printf("  %lf  \n", price2[i]);
 
-            printf(" Day No    ||    ");
-            printf(" Stock Price \n");
-            
-            
-            printf("**************************************\n");  
+            printf("**************************************\n");
+        }
 
-           for(int i=0;i<7;i++)
-            {
-                int j=i+1;
-                printf("  %d                 " , j );
-                printf("  %d  \n" , price4[i] );
+        max(price2);
+        min(price2);
 
-                printf("**************************************\n");
+        break;
 
-            }
-            
-            printf(" Highest Rise Was On Day: %d",1);
-            max(price4);
-            min(price4);
-              break;
+    case 3:
+        system("cls");
 
-              case 5:
-              system("cls");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
- printf("\t\t\t-----------------------------------------------------------------\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t|\t       Welcome To GFG  \t\t\t\t\t|\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
-    printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t       Welcome To IDK  \t\t\t\t\t|\n");
-    printf("\t\t\t|\t                                          \t\t|\n");
-    printf("\t\t\t-----------------------------------------------------------------\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
-     printf("\t\t\t-----------------------------------------------------------------\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t|\t       WEEKLY FLUCTUATIONS  \t\t\t\t|\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
-    printf("\t\t\t|\t                                          \t\t|\n");
-printf("\t\t\t|\t       DAILY STOCK PRICE  \t\t\t\t|\n");
-    printf("\t\t\t|\t                                          \t\t|\n");
-    printf("\t\t\t-----------------------------------------------------------------\n");
+        double price3[7] = {-27.15, 20.3, 3.10, 4.98, -53.5, 6.95, 23.7};
 
-              double price5[7] = {2467.15,260,310, 40, 535, 695,2};
+        printf("\n");
+        printf("\n");
+        printf("\n");
 
+        printf(" Day No    ||    ");
+        printf(" Stock Price \n");
 
+        printf("**************************************\n");
 
-              printf("\n");
-              printf("\n");
-              printf("\n");
+        for (int i = 0; i < 7; i++)
+        {
+            int j = i + 1;
+            printf("  %d                 ", j);
+            printf("  %lf  \n", price3[i]);
 
-            printf(" Day No    ||    ");
-            printf(" Stock Price \n");
-            
-            
-            printf("**************************************\n");  
+            printf("**************************************\n");
+        }
 
-            for(int i=0;i<7;i++)
-            {
-                int j=i+1;
-                printf("  %d                 " , j );
-                printf("  %d  \n" , price5[i] );
+        max(price3);
+        min(price3);
+        break;
 
-                printf("**************************************\n");
+    case 4:
+        system("cls");
 
-            }
-            printf(" Highest Rise Was On Day: %d",1);
-            max(price5);
-            min(price5);
-              break;
+        printf("\t\t\t-----------------------------------------------------------------\n");
 
-            }  
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t|\t       Welcome To LIC  \t\t\t\t\t|\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
+
+        printf("\t\t\t-----------------------------------------------------------------\n");
+
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t|\t       WEEKLY FLUCTUATIONS \t\t\t\t|\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
+
+        double price4[7] = {24.15, 26.2, -3.10, -90.8, 53.50, 6.95, 2};
+
+        printf("\n");
+        printf("\n");
+        printf("\n");
+
+        printf(" Day No    ||    ");
+        printf(" Stock Price \n");
+
+        printf("**************************************\n");
+
+        for (int i = 0; i < 7; i++)
+        {
+            int j = i + 1;
+            printf("  %d                 ", j);
+            printf("  %lf  \n", price4[i]);
+
+            printf("**************************************\n");
+        }
+
+        max(price4);
+        min(price4);
+        break;
+
+    case 5:
+        system("cls");
+
+        printf("\t\t\t-----------------------------------------------------------------\n");
+
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t|\t       Welcome To IDK  \t\t\t\t\t|\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
+
+        printf("\t\t\t-----------------------------------------------------------------\n");
+
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t|\t      WEEKLY FLUCTUATIONS  \t\t\t\t|\n");
+        printf("\t\t\t|\t                                          \t\t|\n");
+        printf("\t\t\t-----------------------------------------------------------------\n");
+
+        double price5[7] = {47.15, 23.9, -10.2, 21.11, -54.5, 4.03, -34.23};
+
+        printf("\n");
+        printf("\n");
+        printf("\n");
+
+        printf(" Day No    ||    ");
+        printf(" Stock Price \n");
+
+        printf("**************************************\n");
+
+        for (int i = 0; i < 7; i++)
+        {
+            int j = i + 1;
+            printf("  %d                 ", j);
+            printf("  %lf  \n", price5[i]);
+
+            printf("**************************************\n");
+        }
+
+        max(price5);
+        min(price5);
+        break;
+    }
 }
-
 
 int main()
 {
-     printf("\t\t\t-----------------------------------------------------------------\n");
+
+   system("cls");
+    char username[15];
+    char password[12];
+
+    printf("Enter your username:\n");
+    scanf("%s", &username);
+    int f = 0;
+    printf("Enter your password:\n");
+    scanf("%s", &password);
+    char a[15] = "Prajjwal";
+    char b[15] = "Kanishk";
+    char c[15] = "Arpita";
+    char d[15] = "Kulsum";
+    if (strcmp(username, a) == 0 || strcmp(username, b) == 0 || strcmp(username, c) == 0 || strcmp(username, d) == 0)
+    {
+        if (strcmp(password, "07171821") == 0)
+        {
+
+            printf("\nWelcome.Login Success!\n");
+            f = 1;
+        }
+        else
+        {
+            printf("\nwrong password");
+        }
+    }
+    else
+    {
+        printf("\nUser doesn't exist");
+    }
+
+    if (f == 1)
+    {
+
+    printf("\t\t\t-----------------------------------------------------------------\n");
 
     printf("\t\t\t|                                          \t\t\t|\n");
-printf("\t\t\t|\t\t    Welcome To Investopedia   \t\t\t|\n");
+    printf("\t\t\t|\t\t    Welcome To Investopedia   \t\t\t|\n");
     printf("\t\t\t|\t                                          \t\t|\n");
     printf("\t\t\t-----------------------------------------------------------------\n");
     printf("\n");
 
-printf("\t\t\t-----------------------------------------------------------------\n");
+    printf("\t\t\t-----------------------------------------------------------------\n");
 
     printf("\t\t\t|\t                                           \t\t|\n");
-printf("\t\t\t|\t\t       Choose From:  \t\t\t\t|\n");
-printf("\t\t\t|\t\t         \t\t\t\t\t|\n");
-printf("\t\t\t|\t\t      1: Crypto_Currency  \t\t\t|\n");
-printf("\t\t\t|\t\t      2: Stock_Market  \t\t\t\t|\n");
-printf("\t\t\t|\t\t      3: Mutual_Funds  \t\t\t\t|\n");
-printf("\t\t\t|\t\t      4: Calculator  \t\t\t\t|\n");
-
+    printf("\t\t\t|\t\t  :::::::::::::::::::::::::  \t\t\t|\n");
+    printf("\t\t\t|\t\t        Choose From:  \t\t\t\t|\n");
+    printf("\t\t\t|\t\t  :::::::::::::::::::::::::  \t\t\t|\n");
+    printf("\t\t\t|\t\t         \t\t\t\t\t|\n");
+    printf("\t\t\t|\t\t      1: Crypto_Currency  \t\t\t|\n");
+    printf("\t\t\t|\t\t      2: Stock_Market  \t\t\t\t|\n");
+    printf("\t\t\t|\t\t      3: Mutual_Funds  \t\t\t\t|\n");
+    printf("\t\t\t|\t\t      4: Calculator  \t\t\t\t|\n");
 
     printf("\t\t\t|\t                                           \t\t|\n");
     printf("\t\t\t-----------------------------------------------------------------\n");
     printf("\n");
 
-    printf("Enter Your Mode Of Investment");
+    printf("Enter Your Mode Of Investment:  ");
     int choice;
-    scanf("%d",&choice);
+    scanf("%d", &choice);
     switch (choice)
     {
-        // case 1:
-        // Crypto_Currency();
-        // break;
-        case 2:
+    // case 1:
+    // Crypto_Currency();
+    // break;
+    case 2:
         Stock_Market();
         break;
         // case 3:
@@ -361,12 +391,6 @@ printf("\t\t\t|\t\t      4: Calculator  \t\t\t\t|\n");
         // case 4:
         // Calculator();
         // break;
-        
-        
+    }
     }
 }
-    
-
-
-
- 
