@@ -118,6 +118,25 @@ int main()
          printf("\t\t  BITCOIN\n");
          printf("\t\t  ETHEREUM\n");
          printf("\t\t  DOGE COIN\n");
+
+
+
+         printf("\t\t\t:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:\n");
+
+      printf("\t\t\t*\t                                          \t\t*\n");
+      printf("\t\t\t*\t          Thank You For Visiting!  \t\t\t*\n");
+      printf("\t\t\t*\t                                          \t\t*\n");
+      printf("\t\t\t:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:\n");
+      }
+
+      else
+      {
+         printf("\t\t\t:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:\n");
+
+    printf("\t\t\t*\t                                          \t\t*\n");
+    printf("\t\t\t*\t          Thank You For Visiting!  \t\t\t*\n");
+    printf("\t\t\t*\t                                          \t\t*\n");
+    printf("\t\t\t:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:\n");
       }
    }
 
@@ -148,6 +167,28 @@ int main()
          printf("\t\t  BITCOIN\n");
          printf("\t\t  ETHEREUM\n");
          printf("\t\t  DOGE COIN\n");
+
+
+
+
+
+         printf("\t\t\t:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:\n");
+
+      printf("\t\t\t*\t                                          \t\t*\n");
+      printf("\t\t\t*\t          Thank You For Visiting!  \t\t\t*\n");
+      printf("\t\t\t*\t                                          \t\t*\n");
+      printf("\t\t\t:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:\n");
+      }
+
+      else
+      {
+      printf("\t\t\t:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:\n");
+
+      printf("\t\t\t*\t                                          \t\t*\n");
+      printf("\t\t\t*\t          Thank You For Visiting!  \t\t\t*\n");
+      printf("\t\t\t*\t                                          \t\t*\n");
+      printf("\t\t\t:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:\n");
+
       }
    }
 }
